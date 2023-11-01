@@ -1,0 +1,6 @@
+services:
+  - type: web 
+    name: representatives
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn representatives.wsgi:application"
