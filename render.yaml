@@ -1,6 +1,6 @@
 services:
   - type: web 
-    name: representatives
+    name: politicians
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn representatives.wsgi:application"
+    startCommand: "gunicorn politicians.wsgi:application"
