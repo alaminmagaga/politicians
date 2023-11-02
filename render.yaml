@@ -3,4 +3,4 @@ services:
     name: politicians
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn politicians.wsgi:app"
+    startCommand: "gunicorn politicians.wsgi:application"
